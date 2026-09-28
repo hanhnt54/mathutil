@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hanhnt.mathutil.core.MathUtilTest" time="0.098" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.hanhnt.mathutil.core.MathUtilTest" time="0.115" tests="6" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire14613455994338905507\surefirebooter7964809623929696518.jar C:\Users\DELL\AppData\Local\Temp\surefire14613455994338905507 2026-09-27T15-54-37_746-jvmRun1 surefire14454496852080293659tmp surefire_06917564471254114357tmp"/>
+    <property name="sun.java.command" value="C:\Users\DELL\AppData\Local\Temp\surefire6340360873145638169\surefirebooter7145021138941063277.jar C:\Users\DELL\AppData\Local\Temp\surefire6340360873145638169 2026-09-28T15-58-32_677-jvmRun1 surefire10705794016783551287tmp surefire_05590102193110573714tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.hanhnt.mathutil.core.MathUtilTest"/>
     <property name="surefire.test.class.path" value="D:\Hanh\FU\BaiGiang\SWT301\project\mathutil\target\test-classes;D:\Hanh\FU\BaiGiang\SWT301\project\mathutil\target\classes;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter\5.14.4\junit-jupiter-5.14.4.jar;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.14.4\junit-jupiter-api-5.14.4.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-commons\1.14.4\junit-platform-commons-1.14.4.jar;C:\Users\DELL\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.14.4\junit-jupiter-params-5.14.4.jar;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.14.4\junit-jupiter-engine-5.14.4.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-engine\1.14.4\junit-platform-engine-1.14.4.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire14613455994338905507\surefirebooter7964809623929696518.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\DELL\AppData\Local\Temp\surefire6340360873145638169\surefirebooter7145021138941063277.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -58,10 +58,61 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testGetFactorialGivenRightArgReturnWell(int, long)[1]" classname="com.hanhnt.mathutil.core.MathUtilTest" time="0.033"/>
+  <testcase name="testGetFactorialGivenRightArgReturnWell(int, long)[1]" classname="com.hanhnt.mathutil.core.MathUtilTest" time="0.028"/>
   <testcase name="testGetFactorialGivenRightArgReturnWell(int, long)[2]" classname="com.hanhnt.mathutil.core.MathUtilTest" time="0"/>
-  <testcase name="testGetFactorialGivenRightArgReturnWell(int, long)[3]" classname="com.hanhnt.mathutil.core.MathUtilTest" time="0.001"/>
-  <testcase name="testGetFactorialGivenRightArgReturnWell(int, long)[4]" classname="com.hanhnt.mathutil.core.MathUtilTest" time="0.001"/>
-  <testcase name="testGetFactorialGivenRightArgReturnWell(int, long)[5]" classname="com.hanhnt.mathutil.core.MathUtilTest" time="0"/>
-  <testcase name="testGetFactorialGivenWrongArgThrowException" classname="com.hanhnt.mathutil.core.MathUtilTest" time="0.002"/>
+  <testcase name="testGetFactorialGivenRightArgReturnWell(int, long)[3]" classname="com.hanhnt.mathutil.core.MathUtilTest" time="0"/>
+  <testcase name="testGetFactorialGivenRightArgReturnWell(int, long)[4]" classname="com.hanhnt.mathutil.core.MathUtilTest" time="0.016">
+    <failure message="expected: &lt;620&gt; but was: &lt;720&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <620> but was: <720>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:166)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:161)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:632)
+	at com.hanhnt.mathutil.core.MathUtilTest.testGetFactorialGivenRightArgReturnWell(MathUtilTest.java:29)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+  </testcase>
+  <testcase name="testGetFactorialGivenRightArgReturnWell(int, long)[5]" classname="com.hanhnt.mathutil.core.MathUtilTest" time="0.001"/>
+  <testcase name="testGetFactorialGivenWrongArgThrowException" classname="com.hanhnt.mathutil.core.MathUtilTest" time="0.004"/>
 </testsuite>
